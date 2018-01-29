@@ -1,0 +1,6 @@
+framework module XDCaptureService {
+  umbrella header "XDCaptureService-umbrella.h"
+
+  export *
+  module * { export * }
+}

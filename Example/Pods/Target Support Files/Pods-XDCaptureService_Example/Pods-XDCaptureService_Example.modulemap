@@ -1,0 +1,6 @@
+framework module Pods_XDCaptureService_Example {
+  umbrella header "Pods-XDCaptureService_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "XDCaptureService",
+  "version": "0.1.0",
+  "summary": "A short description of XDCaptureService.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/458770054@qq.com/XDCaptureService",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "458770054@qq.com": "danecai@webank.com"
+  },
+  "source": {
+    "git": "https://github.com/458770054@qq.com/XDCaptureService.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XDCaptureService/Classes/**/*"
+}
