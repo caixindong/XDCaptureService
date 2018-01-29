@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XDCaptureService_Example' do
+  pod 'XDCaptureService', :path => '../'
+
+  target 'XDCaptureService_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
