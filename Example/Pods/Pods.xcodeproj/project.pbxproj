@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35EE2D78696F94D003AF1FF51C6D83F9 /* XDCaptureService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12635098A84D4B9BF9BCF06AC2FFE063 /* XDCaptureService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E8028F200DF1DA325BF27F07C11106F /* XDCaptureService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BEB436AD7A4B9BC2BA783CF3EB7F46D /* XDCaptureService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24570317F7CBD9629A7C5CCDABAA67C1 /* XDCaptureService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B309E255CB7F3D15A8F8C81B0B465D1 /* XDCaptureService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DCE4BEAD8A847D7247CF2858C32FDC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */; };
 		3F6A8250C43B1F39B2E1C30F08FFC88B /* Pods-XDCaptureService_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD801C41C95A5B7D09EBA14221A198 /* Pods-XDCaptureService_Tests-dummy.m */; };
+		408EF54B1011DE252C9840F3C8668A4D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6948AEA53863E6915ADC5FD2037AE8 /* CoreImage.framework */; };
 		4B2319A017407C7280873E2D7C989062 /* Pods-XDCaptureService_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CB4247072CF872489F848715FC3068 /* Pods-XDCaptureService_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA4BB08424661040A7B5934CB6218DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5769D456D624574EAC7DAEEC843CA630 /* XDVideoWritter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF03DC2AF2F266B06E1BF91B895020A8 /* XDVideoWritter.m */; };
+		62443A71B80FA2381ACA3F0867C485E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0E45E5894BD86EE79311B91AA249F /* AVFoundation.framework */; };
+		8BA4BB08424661040A7B5934CB6218DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */; };
+		93A70B180F9D7BA12A882CD4929ACEF1 /* XDCaptureService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F8D5033216EEA69B447B14CB103D /* XDCaptureService-dummy.m */; };
 		94A47FE9AE72EA65983D54439EB32F38 /* Pods-XDCaptureService_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D801C5272219D1B81FD96842E5B601 /* Pods-XDCaptureService_Example-dummy.m */; };
-		BE2A173C823A2EF960A914A03C8C8EED /* XDCaptureService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E03A2DEADE3B51D59AE5CD13DE5519 /* XDCaptureService-dummy.m */; };
-		CDA93F6C80C4389588CAC21C530765D3 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CCFFDBCC2BB3238128B0EBCB91988 /* ReplaceMe.m */; };
-		D5A48E5D69C75EA2A9B10BDF4B1A80D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		DCC68458BF2E41687CC2F90E666D34D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B6F981D5F20C38273F60E45C43A85FD6 /* XDVideoWritter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8803B72079E5D7779ADF62304DCC777F /* XDVideoWritter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCC68458BF2E41687CC2F90E666D34D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */; };
+		EA2537189BA2C63DC83418895F069853 /* XDCaptureService.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FC9EA3500AEB87406C0A2FC8BA3D02 /* XDCaptureService.m */; };
 		ECCF4BA8DFD89AB20A38A772B8801083 /* Pods-XDCaptureService_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B86BB5FD39784AE256F25E04700A019 /* Pods-XDCaptureService_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -31,16 +36,17 @@
 
 /* Begin PBXFileReference section */
 		03CB4247072CF872489F848715FC3068 /* Pods-XDCaptureService_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDCaptureService_Example-umbrella.h"; sourceTree = "<group>"; };
-		0BB149CF4D76086F12F6E14118DA1C91 /* XDCaptureService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XDCaptureService.modulemap; sourceTree = "<group>"; };
-		12635098A84D4B9BF9BCF06AC2FFE063 /* XDCaptureService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-umbrella.h"; sourceTree = "<group>"; };
+		1BEB436AD7A4B9BC2BA783CF3EB7F46D /* XDCaptureService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDCaptureService.h; path = XDCaptureService/Classes/XDCaptureService.h; sourceTree = "<group>"; };
 		1CBE516AAAB4900A04CA58FA4428BB56 /* Pods-XDCaptureService_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XDCaptureService_Example.modulemap"; sourceTree = "<group>"; };
+		1D78F8D5033216EEA69B447B14CB103D /* XDCaptureService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XDCaptureService-dummy.m"; sourceTree = "<group>"; };
 		21D801C5272219D1B81FD96842E5B601 /* Pods-XDCaptureService_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDCaptureService_Example-dummy.m"; sourceTree = "<group>"; };
 		28061AB8D7DF3F7ECC0CD9B1990C9680 /* XDCaptureService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XDCaptureService.framework; path = XDCaptureService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8A5CD938EDA66CDE2AE86C40B6F257 /* Pods-XDCaptureService_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		46DE46C6594CFD878BD2F8B8BB230044 /* XDCaptureService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDCaptureService.xcconfig; sourceTree = "<group>"; };
+		48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4E7D6EFE945F6487983CA3BDCC869AD3 /* Pods-XDCaptureService_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDCaptureService_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		572B6D25D7100AD129D5BD30CB9AEA50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B309E255CB7F3D15A8F8C81B0B465D1 /* XDCaptureService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-umbrella.h"; sourceTree = "<group>"; };
 		5E42769DD211C577D2D8488FCD339ED6 /* Pods-XDCaptureService_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XDCaptureService_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		68EE7A61F774A5644065F72F652D0C87 /* Pods-XDCaptureService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6FFDBA85DF7F9F7702EE1DCE7422147B /* Pods-XDCaptureService_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Tests-resources.sh"; sourceTree = "<group>"; };
 		71BFC1820D902E0EF359B8AED5C8500B /* Pods-XDCaptureService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,36 +54,42 @@
 		7B86BB5FD39784AE256F25E04700A019 /* Pods-XDCaptureService_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDCaptureService_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7F1F7A663BB0D219582DCAFFED9846FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86643EAA7BB089A2E0623AD2BEA7A311 /* Pods_XDCaptureService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XDCaptureService_Tests.framework; path = "Pods-XDCaptureService_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8803B72079E5D7779ADF62304DCC777F /* XDVideoWritter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDVideoWritter.h; path = XDCaptureService/Classes/XDVideoWritter.h; sourceTree = "<group>"; };
+		8BFB8A6A455A6AA59C162F74280073FD /* XDCaptureService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDCaptureService.xcconfig; sourceTree = "<group>"; };
 		8C45E0C4BFB2298B25ECD563EEC899B0 /* Pods-XDCaptureService_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XDCaptureService_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C8CCFFDBCC2BB3238128B0EBCB91988 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = XDCaptureService/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		9EFD801C41C95A5B7D09EBA14221A198 /* Pods-XDCaptureService_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDCaptureService_Tests-dummy.m"; sourceTree = "<group>"; };
 		A3845ED88531238AC0E90EEA9A4AB457 /* Pods-XDCaptureService_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDCaptureService_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AF00CA860C59437C3FF8EFD6F9941E45 /* Pods-XDCaptureService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B0441D31B8E9549398ED5D6233429520 /* XDCaptureService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-prefix.pch"; sourceTree = "<group>"; };
+		B5A0E45E5894BD86EE79311B91AA249F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		BFB59AC2398235E28C8506227564BAF8 /* Pods-XDCaptureService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C6BC5D1D79BDCEA059E2EFF409BB4D77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF7989D7D0D609A508977ABC6B0FAAAA /* Pods-XDCaptureService_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D6BCA06541514D017BC39CCF12111901 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1E03A2DEADE3B51D59AE5CD13DE5519 /* XDCaptureService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XDCaptureService-dummy.m"; sourceTree = "<group>"; };
+		D7FC9EA3500AEB87406C0A2FC8BA3D02 /* XDCaptureService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDCaptureService.m; path = XDCaptureService/Classes/XDCaptureService.m; sourceTree = "<group>"; };
+		E2BBF952E43F764EF922CEBE74E35981 /* XDCaptureService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XDCaptureService.modulemap; sourceTree = "<group>"; };
 		E6ABCA688E71134B8FD481722946C6DD /* Pods_XDCaptureService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XDCaptureService_Example.framework; path = "Pods-XDCaptureService_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF03DC2AF2F266B06E1BF91B895020A8 /* XDVideoWritter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDVideoWritter.m; path = XDCaptureService/Classes/XDVideoWritter.m; sourceTree = "<group>"; };
+		F9921A0C220565353D1475FB68137B2D /* XDCaptureService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-prefix.pch"; sourceTree = "<group>"; };
+		FC6948AEA53863E6915ADC5FD2037AE8 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 		FD97A1E1E1D339056957F8C11F8E0139 /* Pods-XDCaptureService_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XDCaptureService_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B1D4DBA27FC1DB645555640829EA812 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5A48E5D69C75EA2A9B10BDF4B1A80D5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6C94B1DD60B1DC6CF1DC3080A93E71A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8BA4BB08424661040A7B5934CB6218DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A84DD82618B0BB90CF1FA6662FDE270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62443A71B80FA2381ACA3F0867C485E5 /* AVFoundation.framework in Frameworks */,
+				408EF54B1011DE252C9840F3C8668A4D /* CoreImage.framework in Frameworks */,
+				3DCE4BEAD8A847D7247CF2858C32FDC8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,18 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E6F6A0C62DE20A7266A3E569CD5DC56 /* Support Files */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6BCA06541514D017BC39CCF12111901 /* Info.plist */,
-				0BB149CF4D76086F12F6E14118DA1C91 /* XDCaptureService.modulemap */,
-				46DE46C6594CFD878BD2F8B8BB230044 /* XDCaptureService.xcconfig */,
-				E1E03A2DEADE3B51D59AE5CD13DE5519 /* XDCaptureService-dummy.m */,
-				B0441D31B8E9549398ED5D6233429520 /* XDCaptureService-prefix.pch */,
-				12635098A84D4B9BF9BCF06AC2FFE063 /* XDCaptureService-umbrella.h */,
+				2AEDB48B19022AC9EDE28263A6853EA2 /* iOS */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XDCaptureService";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AEDB48B19022AC9EDE28263A6853EA2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0E45E5894BD86EE79311B91AA249F /* AVFoundation.framework */,
+				FC6948AEA53863E6915ADC5FD2037AE8 /* CoreImage.framework */,
+				48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		4FB338CD09F7DE22C81E27AAADACE498 /* Targets Support Files */ = {
@@ -115,15 +131,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		57BC76AA16F78EBF728A6FD1DAD1C08B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				937A3165D3ED4919023931E5C9EA660F /* XDCaptureService */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				C7183580011B0D7861ACB8D56A89E4DF /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				57BC76AA16F78EBF728A6FD1DAD1C08B /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				93B910F9C30EECC29F8B3ABF92E8AF8F /* Products */,
 				4FB338CD09F7DE22C81E27AAADACE498 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		937A3165D3ED4919023931E5C9EA660F /* XDCaptureService */ = {
+			isa = PBXGroup;
+			children = (
+				1BEB436AD7A4B9BC2BA783CF3EB7F46D /* XDCaptureService.h */,
+				D7FC9EA3500AEB87406C0A2FC8BA3D02 /* XDCaptureService.m */,
+				8803B72079E5D7779ADF62304DCC777F /* XDVideoWritter.h */,
+				EF03DC2AF2F266B06E1BF91B895020A8 /* XDVideoWritter.m */,
+				EA24CDD8580B3AD29C7D1D4E23AFCCBA /* Support Files */,
+			);
+			name = XDCaptureService;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		93B910F9C30EECC29F8B3ABF92E8AF8F /* Products */ = {
@@ -154,24 +191,6 @@
 			path = "Target Support Files/Pods-XDCaptureService_Tests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C131433B2EF8DD11DF043B6316E4B27B /* XDCaptureService */ = {
-			isa = PBXGroup;
-			children = (
-				9C8CCFFDBCC2BB3238128B0EBCB91988 /* ReplaceMe.m */,
-				4E6F6A0C62DE20A7266A3E569CD5DC56 /* Support Files */,
-			);
-			name = XDCaptureService;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		C68953B9944C44CDC25B528AD392AE35 /* Pods-XDCaptureService_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,20 +209,18 @@
 			path = "Target Support Files/Pods-XDCaptureService_Example";
 			sourceTree = "<group>";
 		};
-		C7183580011B0D7861ACB8D56A89E4DF /* Development Pods */ = {
+		EA24CDD8580B3AD29C7D1D4E23AFCCBA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C131433B2EF8DD11DF043B6316E4B27B /* XDCaptureService */,
+				572B6D25D7100AD129D5BD30CB9AEA50 /* Info.plist */,
+				E2BBF952E43F764EF922CEBE74E35981 /* XDCaptureService.modulemap */,
+				8BFB8A6A455A6AA59C162F74280073FD /* XDCaptureService.xcconfig */,
+				1D78F8D5033216EEA69B447B14CB103D /* XDCaptureService-dummy.m */,
+				F9921A0C220565353D1475FB68137B2D /* XDCaptureService-prefix.pch */,
+				5B309E255CB7F3D15A8F8C81B0B465D1 /* XDCaptureService-umbrella.h */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XDCaptureService";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,11 +242,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C05AD1C055DAB099325C19D556F67F96 /* Headers */ = {
+		F9369AF33F68BB51BA2377B9FCE1B69C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35EE2D78696F94D003AF1FF51C6D83F9 /* XDCaptureService-umbrella.h in Headers */,
+				24570317F7CBD9629A7C5CCDABAA67C1 /* XDCaptureService-umbrella.h in Headers */,
+				1E8028F200DF1DA325BF27F07C11106F /* XDCaptureService.h in Headers */,
+				B6F981D5F20C38273F60E45C43A85FD6 /* XDVideoWritter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +294,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C091AF431F19CDE24D54D65E820402E /* Build configuration list for PBXNativeTarget "XDCaptureService" */;
 			buildPhases = (
-				CD1929ABF7038381C92925C1943C6EC7 /* Sources */,
-				1B1D4DBA27FC1DB645555640829EA812 /* Frameworks */,
-				C05AD1C055DAB099325C19D556F67F96 /* Headers */,
+				C5E4DD3F13F3C4D42F971F520FEFC199 /* Sources */,
+				8A84DD82618B0BB90CF1FA6662FDE270 /* Frameworks */,
+				F9369AF33F68BB51BA2377B9FCE1B69C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -325,12 +344,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD1929ABF7038381C92925C1943C6EC7 /* Sources */ = {
+		C5E4DD3F13F3C4D42F971F520FEFC199 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA93F6C80C4389588CAC21C530765D3 /* ReplaceMe.m in Sources */,
-				BE2A173C823A2EF960A914A03C8C8EED /* XDCaptureService-dummy.m in Sources */,
+				93A70B180F9D7BA12A882CD4929ACEF1 /* XDCaptureService-dummy.m in Sources */,
+				EA2537189BA2C63DC83418895F069853 /* XDCaptureService.m in Sources */,
+				5769D456D624574EAC7DAEEC843CA630 /* XDVideoWritter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +376,7 @@
 /* Begin XCBuildConfiguration section */
 		097C7F4C4C4760AA8680E2B633AAD25C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46DE46C6594CFD878BD2F8B8BB230044 /* XDCaptureService.xcconfig */;
+			baseConfigurationReference = 8BFB8A6A455A6AA59C162F74280073FD /* XDCaptureService.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -542,7 +562,7 @@
 		};
 		5DCC5EDDEE7D839F12678B55AFF06556 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46DE46C6594CFD878BD2F8B8BB230044 /* XDCaptureService.xcconfig */;
+			baseConfigurationReference = 8BFB8A6A455A6AA59C162F74280073FD /* XDCaptureService.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

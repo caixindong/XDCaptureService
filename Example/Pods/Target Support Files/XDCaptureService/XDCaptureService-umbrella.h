@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "XDCaptureService.h"
+#import "XDVideoWritter.h"
 
 FOUNDATION_EXPORT double XDCaptureServiceVersionNumber;
 FOUNDATION_EXPORT const unsigned char XDCaptureServiceVersionString[];

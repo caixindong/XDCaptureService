@@ -1,5 +1,5 @@
 PODS:
-  - XDCaptureService (0.1.0)
+  - XDCaptureService (1.0.0)
 
 DEPENDENCIES:
   - XDCaptureService (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  XDCaptureService: c2f03ad654881cfd2882773eaef4128c7acd5a4b
+  XDCaptureService: 8119ad6de3d663d33147ad5a991246d666413fa7
 
 PODFILE CHECKSUM: f6ad2c5f441c147c2ea204c754b7286ae62c50d5
 
