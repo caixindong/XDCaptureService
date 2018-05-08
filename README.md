@@ -22,7 +22,7 @@ pod 'XDCaptureService'
 
 ## Author
 
-458770054@qq.com, danecai@webank.com
+458770054@qq.com
 
 ## License
 
