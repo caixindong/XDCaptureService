@@ -10,10 +10,11 @@
 
 @class XDCaptureService;
 
+
 @protocol XDCaptureServiceDelegate <NSObject>
 
 @optional
-//service
+//service生命周期
 - (void)captureServiceDidStartService:(XDCaptureService *)service;
 
 - (void)captureService:(XDCaptureService *)service serviceDidFailWithError:(NSError *)error;
@@ -22,21 +23,26 @@
 
 - (void)captureService:(XDCaptureService *)service getPreviewLayer:(AVCaptureVideoPreviewLayer *)previewLayer;
 
-- (void)captureService:(XDCaptureService *)service outputPixelBuffer:(CVPixelBufferRef)pixelBuffer;
+- (void)captureService:(XDCaptureService *)service outputSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 
-- (void)captureService:(XDCaptureService *)service outputAudioData:(NSData *)audioData;
-//recorder
+//录像相关
 - (void)captureServiceRecorderDidStart:(XDCaptureService *)service ;
 
 - (void)captureService:(XDCaptureService *)service recorderDidFailWithError:(NSError *)error;
 
 - (void)captureServiceRecorderDidStop:(XDCaptureService *)service;
-//face detect
+
+//照片捕获
+- (void)captureService:(XDCaptureService *)service capturePhoto:(UIImage *)photo;
+
+//人脸检测
 - (void)captureService:(XDCaptureService *)service outputFaceDetectData:(NSArray <AVMetadataFaceObject*>*) faces;
+
+//景深数据
+- (void)captureService:(XDCaptureService *)service captureTrueDepth:(AVDepthData *)depthData API_AVAILABLE(ios(11.0));
 
 @end
 
-////提供preview数据源
 @protocol XDCaptureServicePreViewSource <NSObject>
 
 - (AVCaptureVideoPreviewLayer *)preViewLayerSource;
@@ -60,14 +66,21 @@
 //是否开启景深模式，默认是NO
 @property (nonatomic, assign) BOOL openDepth;
 
-//录像时是否只存储景深数据，默认是NO
-@property (nonatomic, assign) BOOL onlyDepth;
-
 //只有以下指定的sessionPreset才有depth数据：AVCaptureSessionPresetPhoto、AVCaptureSessionPreset1280x720、AVCaptureSessionPreset640x480
 @property (nonatomic, assign) AVCaptureSessionPreset sessionPreset;
 
 //帧率，默认是30
 @property (nonatomic, assign) int frameRate;
+
+//录像的临时存储地址，建议每次录完视频做下重定向
+@property (nonatomic, strong, readonly) NSURL *recordURL;
+
+//如果设置preViewSource则内部不生成AVCaptureVideoPreviewLayer
+@property (nonatomic, assign) id<XDCaptureServicePreViewSource> preViewSource;
+
+@property (nonatomic, assign) id<XDCaptureServiceDelegate> delegate;
+
+@property (nonatomic, assign, readonly) BOOL isRunning;
 
 
 /**
@@ -88,16 +101,6 @@
  };
  **/
 @property (nonatomic, strong) NSDictionary *videoSetting;
-
-//录像视频的临时地址
-@property (nonatomic, strong, readonly) NSURL *recordURL;
-
-@property (nonatomic, assign, readonly) BOOL isRunning;
-
-@property (nonatomic, assign) id<XDCaptureServiceDelegate> delegate;
-
-//如果设置preViewSource则内部不生成AVCaptureVideoPreviewLayer
-@property (nonatomic, assign) id<XDCaptureServicePreViewSource> preViewSource;
 
 ///相机专业设置，除非特定需求，一般不设置
 //感光度（iOS8以上）
@@ -139,10 +142,10 @@
 //切换摄像机
 - (void)switchCamera;
 
-//启动组件
+//启动
 - (void)startRunning;
 
-//注销组件
+//关闭
 - (void)stopRunning;
 
 //开始录像
