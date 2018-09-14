@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0828A766F18AEABE8AFB4F50D2C49C51 /* XDVideoWritter.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A80777E11A23223C8057BE0D845839 /* XDVideoWritter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1E8028F200DF1DA325BF27F07C11106F /* XDCaptureService.h in Headers */ = {isa = PBXBuildFile; fileRef = C1202CB36878DEE30DAAACC6EE2DC8DA /* XDCaptureService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24570317F7CBD9629A7C5CCDABAA67C1 /* XDCaptureService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B01C7265456DE2A3A614BCAD9D13780 /* XDCaptureService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DCE4BEAD8A847D7247CF2858C32FDC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */; };
@@ -19,7 +20,6 @@
 		93A70B180F9D7BA12A882CD4929ACEF1 /* XDCaptureService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D36F8A007E2D0BF7F4EC96C7F30E4EC8 /* XDCaptureService-dummy.m */; };
 		94A47FE9AE72EA65983D54439EB32F38 /* Pods-XDCaptureService_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 762B0ACD585FBB7FB8A3EF333FF768D6 /* Pods-XDCaptureService_Example-dummy.m */; };
 		A22360EC39EC56CFC4012AE46A19AB19 /* Pods-XDCaptureService_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE82218671255C0854ECBCBD17E1B409 /* Pods-XDCaptureService_Tests-dummy.m */; };
-		B6F981D5F20C38273F60E45C43A85FD6 /* XDVideoWritter.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A80777E11A23223C8057BE0D845839 /* XDVideoWritter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCC68458BF2E41687CC2F90E666D34D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */; };
 		EA2537189BA2C63DC83418895F069853 /* XDCaptureService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC62246934FA775AC6C949EB49D938C /* XDCaptureService.m */; };
 /* End PBXBuildFile section */
@@ -269,7 +269,7 @@
 			files = (
 				24570317F7CBD9629A7C5CCDABAA67C1 /* XDCaptureService-umbrella.h in Headers */,
 				1E8028F200DF1DA325BF27F07C11106F /* XDCaptureService.h in Headers */,
-				B6F981D5F20C38273F60E45C43A85FD6 /* XDVideoWritter.h in Headers */,
+				0828A766F18AEABE8AFB4F50D2C49C51 /* XDVideoWritter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,14 +12,14 @@ Pod::Spec.new do |s|
   s.summary          = 'A short description of XDCaptureService.'
   s.homepage         = 'https://github.com/caixindong/XDCaptureService'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '458770054@qq.com' => 'danecai@webank.com' }
+  s.author           = { '458770054@qq.com' => '458770054@qq.com' }
   s.source           = { :git => 'https://github.com/caixindong/XDCaptureService.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'XDCaptureService/Classes/**/*'
 
-  s.public_header_files = 'XDCaptureService/Classes/*.h'
+  s.public_header_files = 'XDCaptureService/Classes/XDCaptureService.h'
   
   s.frameworks = 'AVFoundation', 'CoreImage'
 end

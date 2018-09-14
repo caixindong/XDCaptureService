@@ -8,7 +8,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "458770054@qq.com": "danecai@webank.com"
+    "458770054@qq.com": "458770054@qq.com"
   },
   "source": {
     "git": "https://github.com/caixindong/XDCaptureService.git",
@@ -18,7 +18,7 @@
     "ios": "8.0"
   },
   "source_files": "XDCaptureService/Classes/**/*",
-  "public_header_files": "XDCaptureService/Classes/*.h",
+  "public_header_files": "XDCaptureService/Classes/XDCaptureService.h",
   "frameworks": [
     "AVFoundation",
     "CoreImage"

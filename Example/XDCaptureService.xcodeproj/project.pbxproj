@@ -65,7 +65,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87D90CBDC148468D1DABD47C /* Pods_XDCaptureService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDCaptureService_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED99F45EACEDEF10F38FA55 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A151A1F49239B8A0315BE979 /* XDCaptureService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XDCaptureService.podspec; path = ../XDCaptureService.podspec; sourceTree = "<group>"; };
+		A151A1F49239B8A0315BE979 /* XDCaptureService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XDCaptureService.podspec; path = ../XDCaptureService.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D543305000AB32720D1CCF90 /* Pods-XDCaptureService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDCaptureService_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDCaptureService_Tests/Pods-XDCaptureService_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
