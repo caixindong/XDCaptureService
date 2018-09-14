@@ -3,10 +3,8 @@
 [![CI Status](http://img.shields.io/travis/458770054@qq.com/XDCaptureService.svg?style=flat)](https://travis-ci.org/458770054@qq.com/XDCaptureService)
 [![Version](https://img.shields.io/cocoapods/v/XDCaptureService.svg?style=flat)](http://cocoapods.org/pods/XDCaptureService)
 [![License](https://img.shields.io/cocoapods/l/XDCaptureService.svg?style=flat)](http://cocoapods.org/pods/XDCaptureService)
-[![Platform](https://img.shields.io/cocoapods/p/XDCaptureService.svg?style=flat)](http://cocoapods.org/pods/XDCaptureService)
+[![Platform](https://img.shields.io/cocoapods/p/XDCaptureService.svg?style=flat)](http://cocoapods.org/pods/XDCaptureService)           
 A simple and stable camera component in iOS, which can help quickly build your own audio and video module.
-
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -21,7 +19,7 @@ pod 'XDCaptureService'
 ```
 
 ## Usage
-#### start service
+#### Start service
 ```
 @property (nonatomic, strong) XDCaptureService *service;
 self.service = [[XDCaptureService alloc] init];
@@ -29,7 +27,7 @@ _service.delegate = self;
 
 [_service startRunning];
 ```
-#### implement delegate
+#### Delegate implement
 ```
 @protocol XDCaptureServiceDelegate <NSObject>
 
@@ -64,10 +62,10 @@ _service.delegate = self;
 @end
 ```
 
-#### base actions
+#### Base actions
 Capture a photo, record a video, face detect, capture depth map data, switch camera, focus, whiteBalance，ISO and so on.
 
-#### more details
+#### More details
 You can view more usage details in the demo project.
 
 ## Author
