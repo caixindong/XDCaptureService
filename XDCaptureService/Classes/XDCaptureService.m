@@ -471,7 +471,7 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
         [_metadataOutput setMetadataObjectsDelegate:self queue:metaQueue];
         return YES;
     } else {
-        *error = [NSError errorWithDomain:@"com.caixindong.captureservice.face" code:-2208 userInfo:@{NSLocalizedDescriptionKey:@"add face output fail"}];
+        *error = [NSError errorWithDomain:@"com.caixindong.captureservice.face" code:-2209 userInfo:@{NSLocalizedDescriptionKey:@"add face output fail"}];
         
         return NO;
     }
@@ -628,12 +628,12 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
 }
 
 #pragma mark - AVCaptureDepthDataOutputDelegate
-- (void)depthDataOutput:(AVCaptureDepthDataOutput *)output didOutputDepthData:(AVDepthData *)depthData timestamp:(CMTime)timestamp connection:(AVCaptureConnection *)connection {
+- (void)depthDataOutput:(AVCaptureDepthDataOutput *)output didOutputDepthData:(AVDepthData *)depthData timestamp:(CMTime)timestamp connection:(AVCaptureConnection *)connection  API_AVAILABLE(ios(11.0)){
     [self _processDepthData:depthData time:timestamp];
 }
 
 #pragma mark - AVCaptureDataOutputSynchronizerDelegate
-- (void)dataOutputSynchronizer:(AVCaptureDataOutputSynchronizer *)synchronizer didOutputSynchronizedDataCollection:(AVCaptureSynchronizedDataCollection *)synchronizedDataCollection {
+- (void)dataOutputSynchronizer:(AVCaptureDataOutputSynchronizer *)synchronizer didOutputSynchronizedDataCollection:(AVCaptureSynchronizedDataCollection *)synchronizedDataCollection  API_AVAILABLE(ios(11.0)){
     
     AVCaptureSynchronizedDepthData *syncedDepthData = (AVCaptureSynchronizedDepthData*)[synchronizedDataCollection synchronizedDataForCaptureOutput:_depthDataOutput];
     if (syncedDepthData && !syncedDepthData.depthDataWasDropped) {
@@ -684,7 +684,7 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
     }
 }
 
-- (void)_processDepthData:(AVDepthData *)depthData time:(CMTime)timestamp{
+- (void)_processDepthData:(AVDepthData *)depthData time:(CMTime)timestamp API_AVAILABLE(ios(11.0)){
     //像RGB图像一样，除了是单通道，但它们仍然可以表示为CV像素缓冲区，现在 CoreVideo 定义了在上一张幻灯片中看到类型的四个新像素格式。因为如果是在GPU上，会要求16位的值，而在CPU上，就都是32位的值
     AVDepthData *cDepthData = [depthData depthDataByConvertingToDepthDataType:kCVPixelFormatType_DepthFloat32];
     dispatch_async(_outputQueue, ^{

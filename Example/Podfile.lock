@@ -6,11 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   XDCaptureService:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  XDCaptureService: 8119ad6de3d663d33147ad5a991246d666413fa7
+  XDCaptureService: 8561557c9451e2bc2ff6ebbabb7b8729f55c8321
 
 PODFILE CHECKSUM: f6ad2c5f441c147c2ea204c754b7286ae62c50d5
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.0
