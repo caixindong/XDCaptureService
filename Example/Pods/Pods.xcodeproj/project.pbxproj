@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E8028F200DF1DA325BF27F07C11106F /* XDCaptureService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BEB436AD7A4B9BC2BA783CF3EB7F46D /* XDCaptureService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24570317F7CBD9629A7C5CCDABAA67C1 /* XDCaptureService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B309E255CB7F3D15A8F8C81B0B465D1 /* XDCaptureService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E8028F200DF1DA325BF27F07C11106F /* XDCaptureService.h in Headers */ = {isa = PBXBuildFile; fileRef = C1202CB36878DEE30DAAACC6EE2DC8DA /* XDCaptureService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24570317F7CBD9629A7C5CCDABAA67C1 /* XDCaptureService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B01C7265456DE2A3A614BCAD9D13780 /* XDCaptureService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DCE4BEAD8A847D7247CF2858C32FDC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */; };
-		3F6A8250C43B1F39B2E1C30F08FFC88B /* Pods-XDCaptureService_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD801C41C95A5B7D09EBA14221A198 /* Pods-XDCaptureService_Tests-dummy.m */; };
 		408EF54B1011DE252C9840F3C8668A4D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6948AEA53863E6915ADC5FD2037AE8 /* CoreImage.framework */; };
-		4B2319A017407C7280873E2D7C989062 /* Pods-XDCaptureService_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CB4247072CF872489F848715FC3068 /* Pods-XDCaptureService_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5769D456D624574EAC7DAEEC843CA630 /* XDVideoWritter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF03DC2AF2F266B06E1BF91B895020A8 /* XDVideoWritter.m */; };
+		4B2319A017407C7280873E2D7C989062 /* Pods-XDCaptureService_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26288494BEC009F527A7C3AEABAF0461 /* Pods-XDCaptureService_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54D894FB76D915B8AEEF5193A711DA61 /* Pods-XDCaptureService_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57DA4869BF74911290BCB7969B337188 /* Pods-XDCaptureService_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5769D456D624574EAC7DAEEC843CA630 /* XDVideoWritter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88071730E480C1BD5B5A0D5754B2FF40 /* XDVideoWritter.m */; };
+		59C698F41B57127040BC7C777425405E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */; };
 		62443A71B80FA2381ACA3F0867C485E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0E45E5894BD86EE79311B91AA249F /* AVFoundation.framework */; };
-		8BA4BB08424661040A7B5934CB6218DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */; };
-		93A70B180F9D7BA12A882CD4929ACEF1 /* XDCaptureService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F8D5033216EEA69B447B14CB103D /* XDCaptureService-dummy.m */; };
-		94A47FE9AE72EA65983D54439EB32F38 /* Pods-XDCaptureService_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D801C5272219D1B81FD96842E5B601 /* Pods-XDCaptureService_Example-dummy.m */; };
-		B6F981D5F20C38273F60E45C43A85FD6 /* XDVideoWritter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8803B72079E5D7779ADF62304DCC777F /* XDVideoWritter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93A70B180F9D7BA12A882CD4929ACEF1 /* XDCaptureService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D36F8A007E2D0BF7F4EC96C7F30E4EC8 /* XDCaptureService-dummy.m */; };
+		94A47FE9AE72EA65983D54439EB32F38 /* Pods-XDCaptureService_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 762B0ACD585FBB7FB8A3EF333FF768D6 /* Pods-XDCaptureService_Example-dummy.m */; };
+		A22360EC39EC56CFC4012AE46A19AB19 /* Pods-XDCaptureService_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE82218671255C0854ECBCBD17E1B409 /* Pods-XDCaptureService_Tests-dummy.m */; };
+		B6F981D5F20C38273F60E45C43A85FD6 /* XDVideoWritter.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A80777E11A23223C8057BE0D845839 /* XDVideoWritter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCC68458BF2E41687CC2F90E666D34D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */; };
-		EA2537189BA2C63DC83418895F069853 /* XDCaptureService.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FC9EA3500AEB87406C0A2FC8BA3D02 /* XDCaptureService.m */; };
-		ECCF4BA8DFD89AB20A38A772B8801083 /* Pods-XDCaptureService_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B86BB5FD39784AE256F25E04700A019 /* Pods-XDCaptureService_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA2537189BA2C63DC83418895F069853 /* XDCaptureService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC62246934FA775AC6C949EB49D938C /* XDCaptureService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,54 +32,64 @@
 			remoteGlobalIDString = D4890898A65BA664C765F60667C93DF3;
 			remoteInfo = XDCaptureService;
 		};
+		4DA353F5D76233A2CAE601D41E29B3E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C97A2036D3F606AEDD781E7B24A42B9;
+			remoteInfo = "Pods-XDCaptureService_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03CB4247072CF872489F848715FC3068 /* Pods-XDCaptureService_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDCaptureService_Example-umbrella.h"; sourceTree = "<group>"; };
-		1BEB436AD7A4B9BC2BA783CF3EB7F46D /* XDCaptureService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDCaptureService.h; path = XDCaptureService/Classes/XDCaptureService.h; sourceTree = "<group>"; };
-		1CBE516AAAB4900A04CA58FA4428BB56 /* Pods-XDCaptureService_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XDCaptureService_Example.modulemap"; sourceTree = "<group>"; };
-		1D78F8D5033216EEA69B447B14CB103D /* XDCaptureService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XDCaptureService-dummy.m"; sourceTree = "<group>"; };
-		21D801C5272219D1B81FD96842E5B601 /* Pods-XDCaptureService_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDCaptureService_Example-dummy.m"; sourceTree = "<group>"; };
+		15EF8094B961CDAD6B0225C4210D42E1 /* Pods-XDCaptureService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		20BAD66A593F9EFAE1F811BF55CF33A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		26288494BEC009F527A7C3AEABAF0461 /* Pods-XDCaptureService_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDCaptureService_Example-umbrella.h"; sourceTree = "<group>"; };
 		28061AB8D7DF3F7ECC0CD9B1990C9680 /* XDCaptureService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XDCaptureService.framework; path = XDCaptureService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E8A5CD938EDA66CDE2AE86C40B6F257 /* Pods-XDCaptureService_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		29E14BC0991DE5F3CFA92B9E103654D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7CCCC47E73076741D2562DD10C9DBA /* XDCaptureService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XDCaptureService.modulemap; sourceTree = "<group>"; };
+		3DD075B84FF2DD325C98D83A0AC2195F /* Pods-XDCaptureService_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XDCaptureService_Example.modulemap"; sourceTree = "<group>"; };
+		4336E0B82A8F2286A2E9EA6E44DC38C5 /* Pods-XDCaptureService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		48E77610E792D34CA164C5998AEC6821 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4E7D6EFE945F6487983CA3BDCC869AD3 /* Pods-XDCaptureService_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDCaptureService_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		572B6D25D7100AD129D5BD30CB9AEA50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B309E255CB7F3D15A8F8C81B0B465D1 /* XDCaptureService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-umbrella.h"; sourceTree = "<group>"; };
-		5E42769DD211C577D2D8488FCD339ED6 /* Pods-XDCaptureService_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XDCaptureService_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		68EE7A61F774A5644065F72F652D0C87 /* Pods-XDCaptureService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6FFDBA85DF7F9F7702EE1DCE7422147B /* Pods-XDCaptureService_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Tests-resources.sh"; sourceTree = "<group>"; };
-		71BFC1820D902E0EF359B8AED5C8500B /* Pods-XDCaptureService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		71D6A56B0B51C7D3D88571808A043570 /* Pods-XDCaptureService_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Example-resources.sh"; sourceTree = "<group>"; };
-		7B86BB5FD39784AE256F25E04700A019 /* Pods-XDCaptureService_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDCaptureService_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7F1F7A663BB0D219582DCAFFED9846FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC62246934FA775AC6C949EB49D938C /* XDCaptureService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDCaptureService.m; path = XDCaptureService/Classes/XDCaptureService.m; sourceTree = "<group>"; };
+		57DA4869BF74911290BCB7969B337188 /* Pods-XDCaptureService_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDCaptureService_Tests-umbrella.h"; sourceTree = "<group>"; };
+		762B0ACD585FBB7FB8A3EF333FF768D6 /* Pods-XDCaptureService_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDCaptureService_Example-dummy.m"; sourceTree = "<group>"; };
+		77405D42BC32FB46E44E65BEAF1B1AD2 /* Pods-XDCaptureService_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		7A58D87AF9CE5FD72F3B17B5CF4B91A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7B01C7265456DE2A3A614BCAD9D13780 /* XDCaptureService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-umbrella.h"; sourceTree = "<group>"; };
+		82FD3C3F7E9759E27867DF9FE1F8931B /* XDCaptureService.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XDCaptureService.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		86643EAA7BB089A2E0623AD2BEA7A311 /* Pods_XDCaptureService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XDCaptureService_Tests.framework; path = "Pods-XDCaptureService_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8803B72079E5D7779ADF62304DCC777F /* XDVideoWritter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDVideoWritter.h; path = XDCaptureService/Classes/XDVideoWritter.h; sourceTree = "<group>"; };
-		8BFB8A6A455A6AA59C162F74280073FD /* XDCaptureService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDCaptureService.xcconfig; sourceTree = "<group>"; };
-		8C45E0C4BFB2298B25ECD563EEC899B0 /* Pods-XDCaptureService_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XDCaptureService_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88071730E480C1BD5B5A0D5754B2FF40 /* XDVideoWritter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDVideoWritter.m; path = XDCaptureService/Classes/XDVideoWritter.m; sourceTree = "<group>"; };
+		893844150C2D1D243700F333F37501B9 /* Pods-XDCaptureService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Example.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EFD801C41C95A5B7D09EBA14221A198 /* Pods-XDCaptureService_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDCaptureService_Tests-dummy.m"; sourceTree = "<group>"; };
-		A3845ED88531238AC0E90EEA9A4AB457 /* Pods-XDCaptureService_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDCaptureService_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		AF00CA860C59437C3FF8EFD6F9941E45 /* Pods-XDCaptureService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9749DE6B50AA26CF6CBED7961B70C072 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA9141AEB4AF0C7309B8B1071E1BDFF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDF1D3205DC830E70937DBEA5E111E3 /* Pods-XDCaptureService_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDCaptureService_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF7298143443ED3260A4E52CF47C9DA7 /* Pods-XDCaptureService_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XDCaptureService_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B5A0E45E5894BD86EE79311B91AA249F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		BFB59AC2398235E28C8506227564BAF8 /* Pods-XDCaptureService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C6BC5D1D79BDCEA059E2EFF409BB4D77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF7989D7D0D609A508977ABC6B0FAAAA /* Pods-XDCaptureService_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D7FC9EA3500AEB87406C0A2FC8BA3D02 /* XDCaptureService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDCaptureService.m; path = XDCaptureService/Classes/XDCaptureService.m; sourceTree = "<group>"; };
-		E2BBF952E43F764EF922CEBE74E35981 /* XDCaptureService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XDCaptureService.modulemap; sourceTree = "<group>"; };
+		C1202CB36878DEE30DAAACC6EE2DC8DA /* XDCaptureService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDCaptureService.h; path = XDCaptureService/Classes/XDCaptureService.h; sourceTree = "<group>"; };
+		C2A80777E11A23223C8057BE0D845839 /* XDVideoWritter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDVideoWritter.h; path = XDCaptureService/Classes/XDVideoWritter.h; sourceTree = "<group>"; };
+		D258F64BFD9CF9CA26ADDD9AA19EB614 /* Pods-XDCaptureService_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Tests-resources.sh"; sourceTree = "<group>"; };
+		D36F8A007E2D0BF7F4EC96C7F30E4EC8 /* XDCaptureService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XDCaptureService-dummy.m"; sourceTree = "<group>"; };
+		D3CDC0665237A719A0AE92ACDAD20AAE /* XDCaptureService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-prefix.pch"; sourceTree = "<group>"; };
+		DE8EA415985E7889FBFD1EDAAF0AC5F0 /* Pods-XDCaptureService_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XDCaptureService_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFE55FEF405FC4CB8E458854256D7699 /* Pods-XDCaptureService_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XDCaptureService_Tests.modulemap"; sourceTree = "<group>"; };
 		E6ABCA688E71134B8FD481722946C6DD /* Pods_XDCaptureService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XDCaptureService_Example.framework; path = "Pods-XDCaptureService_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF03DC2AF2F266B06E1BF91B895020A8 /* XDVideoWritter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDVideoWritter.m; path = XDCaptureService/Classes/XDVideoWritter.m; sourceTree = "<group>"; };
-		F9921A0C220565353D1475FB68137B2D /* XDCaptureService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-prefix.pch"; sourceTree = "<group>"; };
+		E83278C45624815110110D78EFFEEE97 /* Pods-XDCaptureService_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Example-resources.sh"; sourceTree = "<group>"; };
+		F24122FF7E583E9DCB9CF2655FED014D /* Pods-XDCaptureService_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F4F7433183BA9077C5CD38C83A64D34D /* XDCaptureService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDCaptureService.xcconfig; sourceTree = "<group>"; };
+		F9032F9EC64A65F4A1F601C592C5B6E5 /* Pods-XDCaptureService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC6948AEA53863E6915ADC5FD2037AE8 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
-		FD97A1E1E1D339056957F8C11F8E0139 /* Pods-XDCaptureService_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XDCaptureService_Tests.modulemap"; sourceTree = "<group>"; };
+		FD5F2DD206FB15F6411B5BCC6DD2D029 /* Pods-XDCaptureService_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDCaptureService_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE82218671255C0854ECBCBD17E1B409 /* Pods-XDCaptureService_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDCaptureService_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6C94B1DD60B1DC6CF1DC3080A93E71A0 /* Frameworks */ = {
+		6B6F40A61C8742088FDF7DDA816703CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BA4BB08424661040A7B5934CB6218DA /* Foundation.framework in Frameworks */,
+				59C698F41B57127040BC7C777425405E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +114,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC4734E02DA7A90ACD6C39496D0602E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7A58D87AF9CE5FD72F3B17B5CF4B91A3 /* LICENSE */,
+				20BAD66A593F9EFAE1F811BF55CF33A9 /* README.md */,
+				82FD3C3F7E9759E27867DF9FE1F8931B /* XDCaptureService.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,45 +142,56 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		4C34489DDCEB504125C50FF5C61BF5FA /* XDCaptureService */ = {
+			isa = PBXGroup;
+			children = (
+				C1202CB36878DEE30DAAACC6EE2DC8DA /* XDCaptureService.h */,
+				4BC62246934FA775AC6C949EB49D938C /* XDCaptureService.m */,
+				C2A80777E11A23223C8057BE0D845839 /* XDVideoWritter.h */,
+				88071730E480C1BD5B5A0D5754B2FF40 /* XDVideoWritter.m */,
+				0FC4734E02DA7A90ACD6C39496D0602E /* Pod */,
+				C61B6BB48F180B5C2F61CBC4EDE408B7 /* Support Files */,
+			);
+			name = XDCaptureService;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		4FB338CD09F7DE22C81E27AAADACE498 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C68953B9944C44CDC25B528AD392AE35 /* Pods-XDCaptureService_Example */,
-				97EF315CEF02BF87BEA635D1DF73951A /* Pods-XDCaptureService_Tests */,
+				543FE830D0F68F0D79AA743679975A17 /* Pods-XDCaptureService_Example */,
+				A4FD55B8CD3D257E67DFAFF9DF9EB3C2 /* Pods-XDCaptureService_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		57BC76AA16F78EBF728A6FD1DAD1C08B /* Development Pods */ = {
+		543FE830D0F68F0D79AA743679975A17 /* Pods-XDCaptureService_Example */ = {
 			isa = PBXGroup;
 			children = (
-				937A3165D3ED4919023931E5C9EA660F /* XDCaptureService */,
+				9749DE6B50AA26CF6CBED7961B70C072 /* Info.plist */,
+				3DD075B84FF2DD325C98D83A0AC2195F /* Pods-XDCaptureService_Example.modulemap */,
+				AF7298143443ED3260A4E52CF47C9DA7 /* Pods-XDCaptureService_Example-acknowledgements.markdown */,
+				ACDF1D3205DC830E70937DBEA5E111E3 /* Pods-XDCaptureService_Example-acknowledgements.plist */,
+				762B0ACD585FBB7FB8A3EF333FF768D6 /* Pods-XDCaptureService_Example-dummy.m */,
+				F24122FF7E583E9DCB9CF2655FED014D /* Pods-XDCaptureService_Example-frameworks.sh */,
+				E83278C45624815110110D78EFFEEE97 /* Pods-XDCaptureService_Example-resources.sh */,
+				26288494BEC009F527A7C3AEABAF0461 /* Pods-XDCaptureService_Example-umbrella.h */,
+				15EF8094B961CDAD6B0225C4210D42E1 /* Pods-XDCaptureService_Example.debug.xcconfig */,
+				893844150C2D1D243700F333F37501B9 /* Pods-XDCaptureService_Example.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Pods-XDCaptureService_Example";
+			path = "Target Support Files/Pods-XDCaptureService_Example";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				57BC76AA16F78EBF728A6FD1DAD1C08B /* Development Pods */,
+				977B2A77E7CBA35769511AACCEFB1D8E /* Development Pods */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				93B910F9C30EECC29F8B3ABF92E8AF8F /* Products */,
 				4FB338CD09F7DE22C81E27AAADACE498 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		937A3165D3ED4919023931E5C9EA660F /* XDCaptureService */ = {
-			isa = PBXGroup;
-			children = (
-				1BEB436AD7A4B9BC2BA783CF3EB7F46D /* XDCaptureService.h */,
-				D7FC9EA3500AEB87406C0A2FC8BA3D02 /* XDCaptureService.m */,
-				8803B72079E5D7779ADF62304DCC777F /* XDVideoWritter.h */,
-				EF03DC2AF2F266B06E1BF91B895020A8 /* XDVideoWritter.m */,
-				EA24CDD8580B3AD29C7D1D4E23AFCCBA /* Support Files */,
-			);
-			name = XDCaptureService;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		93B910F9C30EECC29F8B3ABF92E8AF8F /* Products */ = {
@@ -173,51 +204,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97EF315CEF02BF87BEA635D1DF73951A /* Pods-XDCaptureService_Tests */ = {
+		977B2A77E7CBA35769511AACCEFB1D8E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C6BC5D1D79BDCEA059E2EFF409BB4D77 /* Info.plist */,
-				FD97A1E1E1D339056957F8C11F8E0139 /* Pods-XDCaptureService_Tests.modulemap */,
-				8C45E0C4BFB2298B25ECD563EEC899B0 /* Pods-XDCaptureService_Tests-acknowledgements.markdown */,
-				A3845ED88531238AC0E90EEA9A4AB457 /* Pods-XDCaptureService_Tests-acknowledgements.plist */,
-				9EFD801C41C95A5B7D09EBA14221A198 /* Pods-XDCaptureService_Tests-dummy.m */,
-				2E8A5CD938EDA66CDE2AE86C40B6F257 /* Pods-XDCaptureService_Tests-frameworks.sh */,
-				6FFDBA85DF7F9F7702EE1DCE7422147B /* Pods-XDCaptureService_Tests-resources.sh */,
-				7B86BB5FD39784AE256F25E04700A019 /* Pods-XDCaptureService_Tests-umbrella.h */,
-				AF00CA860C59437C3FF8EFD6F9941E45 /* Pods-XDCaptureService_Tests.debug.xcconfig */,
-				71BFC1820D902E0EF359B8AED5C8500B /* Pods-XDCaptureService_Tests.release.xcconfig */,
+				4C34489DDCEB504125C50FF5C61BF5FA /* XDCaptureService */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A4FD55B8CD3D257E67DFAFF9DF9EB3C2 /* Pods-XDCaptureService_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				29E14BC0991DE5F3CFA92B9E103654D3 /* Info.plist */,
+				DFE55FEF405FC4CB8E458854256D7699 /* Pods-XDCaptureService_Tests.modulemap */,
+				DE8EA415985E7889FBFD1EDAAF0AC5F0 /* Pods-XDCaptureService_Tests-acknowledgements.markdown */,
+				FD5F2DD206FB15F6411B5BCC6DD2D029 /* Pods-XDCaptureService_Tests-acknowledgements.plist */,
+				FE82218671255C0854ECBCBD17E1B409 /* Pods-XDCaptureService_Tests-dummy.m */,
+				77405D42BC32FB46E44E65BEAF1B1AD2 /* Pods-XDCaptureService_Tests-frameworks.sh */,
+				D258F64BFD9CF9CA26ADDD9AA19EB614 /* Pods-XDCaptureService_Tests-resources.sh */,
+				57DA4869BF74911290BCB7969B337188 /* Pods-XDCaptureService_Tests-umbrella.h */,
+				F9032F9EC64A65F4A1F601C592C5B6E5 /* Pods-XDCaptureService_Tests.debug.xcconfig */,
+				4336E0B82A8F2286A2E9EA6E44DC38C5 /* Pods-XDCaptureService_Tests.release.xcconfig */,
 			);
 			name = "Pods-XDCaptureService_Tests";
 			path = "Target Support Files/Pods-XDCaptureService_Tests";
 			sourceTree = "<group>";
 		};
-		C68953B9944C44CDC25B528AD392AE35 /* Pods-XDCaptureService_Example */ = {
+		C61B6BB48F180B5C2F61CBC4EDE408B7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7F1F7A663BB0D219582DCAFFED9846FA /* Info.plist */,
-				1CBE516AAAB4900A04CA58FA4428BB56 /* Pods-XDCaptureService_Example.modulemap */,
-				5E42769DD211C577D2D8488FCD339ED6 /* Pods-XDCaptureService_Example-acknowledgements.markdown */,
-				4E7D6EFE945F6487983CA3BDCC869AD3 /* Pods-XDCaptureService_Example-acknowledgements.plist */,
-				21D801C5272219D1B81FD96842E5B601 /* Pods-XDCaptureService_Example-dummy.m */,
-				CF7989D7D0D609A508977ABC6B0FAAAA /* Pods-XDCaptureService_Example-frameworks.sh */,
-				71D6A56B0B51C7D3D88571808A043570 /* Pods-XDCaptureService_Example-resources.sh */,
-				03CB4247072CF872489F848715FC3068 /* Pods-XDCaptureService_Example-umbrella.h */,
-				BFB59AC2398235E28C8506227564BAF8 /* Pods-XDCaptureService_Example.debug.xcconfig */,
-				68EE7A61F774A5644065F72F652D0C87 /* Pods-XDCaptureService_Example.release.xcconfig */,
-			);
-			name = "Pods-XDCaptureService_Example";
-			path = "Target Support Files/Pods-XDCaptureService_Example";
-			sourceTree = "<group>";
-		};
-		EA24CDD8580B3AD29C7D1D4E23AFCCBA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				572B6D25D7100AD129D5BD30CB9AEA50 /* Info.plist */,
-				E2BBF952E43F764EF922CEBE74E35981 /* XDCaptureService.modulemap */,
-				8BFB8A6A455A6AA59C162F74280073FD /* XDCaptureService.xcconfig */,
-				1D78F8D5033216EEA69B447B14CB103D /* XDCaptureService-dummy.m */,
-				F9921A0C220565353D1475FB68137B2D /* XDCaptureService-prefix.pch */,
-				5B309E255CB7F3D15A8F8C81B0B465D1 /* XDCaptureService-umbrella.h */,
+				AA9141AEB4AF0C7309B8B1071E1BDFF4 /* Info.plist */,
+				2F7CCCC47E73076741D2562DD10C9DBA /* XDCaptureService.modulemap */,
+				F4F7433183BA9077C5CD38C83A64D34D /* XDCaptureService.xcconfig */,
+				D36F8A007E2D0BF7F4EC96C7F30E4EC8 /* XDCaptureService-dummy.m */,
+				D3CDC0665237A719A0AE92ACDAD20AAE /* XDCaptureService-prefix.pch */,
+				7B01C7265456DE2A3A614BCAD9D13780 /* XDCaptureService-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/XDCaptureService";
@@ -226,11 +247,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A67F68C05D52A6CF8AFFEB948B0D8077 /* Headers */ = {
+		06F41DD77815162872F520C459B589D9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECCF4BA8DFD89AB20A38A772B8801083 /* Pods-XDCaptureService_Tests-umbrella.h in Headers */,
+				54D894FB76D915B8AEEF5193A711DA61 /* Pods-XDCaptureService_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +276,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4A3E35E67E0E755B5A551D95888BEBBB /* Pods-XDCaptureService_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFF55E326468E35BE5D115F1F9F8239 /* Build configuration list for PBXNativeTarget "Pods-XDCaptureService_Tests" */;
+			buildPhases = (
+				17EFD04CE87E6F2F74F56FF8532F3B02 /* Sources */,
+				6B6F40A61C8742088FDF7DDA816703CB /* Frameworks */,
+				06F41DD77815162872F520C459B589D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECBF897905513F5D63F1E07F4DE38F1A /* PBXTargetDependency */,
+			);
+			name = "Pods-XDCaptureService_Tests";
+			productName = "Pods-XDCaptureService_Tests";
+			productReference = 86643EAA7BB089A2E0623AD2BEA7A311 /* Pods_XDCaptureService_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7C97A2036D3F606AEDD781E7B24A42B9 /* Pods-XDCaptureService_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1ECC837F07209EBB3EC18012E63E3F6B /* Build configuration list for PBXNativeTarget "Pods-XDCaptureService_Example" */;
@@ -271,23 +310,6 @@
 			name = "Pods-XDCaptureService_Example";
 			productName = "Pods-XDCaptureService_Example";
 			productReference = E6ABCA688E71134B8FD481722946C6DD /* Pods_XDCaptureService_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AADEC97B37E47313D3585C27987C2EB1 /* Pods-XDCaptureService_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0A7F372E3D26576EBF62B2F27C8D3BF /* Build configuration list for PBXNativeTarget "Pods-XDCaptureService_Tests" */;
-			buildPhases = (
-				5EDE21599E32BA9C73315A3A6C18FB45 /* Sources */,
-				6C94B1DD60B1DC6CF1DC3080A93E71A0 /* Frameworks */,
-				A67F68C05D52A6CF8AFFEB948B0D8077 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-XDCaptureService_Tests";
-			productName = "Pods-XDCaptureService_Tests";
-			productReference = 86643EAA7BB089A2E0623AD2BEA7A311 /* Pods_XDCaptureService_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D4890898A65BA664C765F60667C93DF3 /* XDCaptureService */ = {
@@ -313,8 +335,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -329,18 +351,18 @@
 			projectRoot = "";
 			targets = (
 				7C97A2036D3F606AEDD781E7B24A42B9 /* Pods-XDCaptureService_Example */,
-				AADEC97B37E47313D3585C27987C2EB1 /* Pods-XDCaptureService_Tests */,
+				4A3E35E67E0E755B5A551D95888BEBBB /* Pods-XDCaptureService_Tests */,
 				D4890898A65BA664C765F60667C93DF3 /* XDCaptureService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5EDE21599E32BA9C73315A3A6C18FB45 /* Sources */ = {
+		17EFD04CE87E6F2F74F56FF8532F3B02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6A8250C43B1F39B2E1C30F08FFC88B /* Pods-XDCaptureService_Tests-dummy.m in Sources */,
+				A22360EC39EC56CFC4012AE46A19AB19 /* Pods-XDCaptureService_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,104 +393,16 @@
 			target = D4890898A65BA664C765F60667C93DF3 /* XDCaptureService */;
 			targetProxy = 1F898BC2451BACF4805BE67951DDEFB0 /* PBXContainerItemProxy */;
 		};
+		ECBF897905513F5D63F1E07F4DE38F1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XDCaptureService_Example";
+			target = 7C97A2036D3F606AEDD781E7B24A42B9 /* Pods-XDCaptureService_Example */;
+			targetProxy = 4DA353F5D76233A2CAE601D41E29B3E2 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		097C7F4C4C4760AA8680E2B633AAD25C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BFB8A6A455A6AA59C162F74280073FD /* XDCaptureService.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XDCaptureService/XDCaptureService-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XDCaptureService/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XDCaptureService/XDCaptureService.modulemap";
-				PRODUCT_NAME = XDCaptureService;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		22CBBBA62367CCC6A9A1BB35BCBF23B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68EE7A61F774A5644065F72F652D0C87 /* Pods-XDCaptureService_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-XDCaptureService_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-XDCaptureService_Example/Pods-XDCaptureService_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_XDCaptureService_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		27882A455FEF8FE6433146AF12A70422 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF00CA860C59437C3FF8EFD6F9941E45 /* Pods-XDCaptureService_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-XDCaptureService_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-XDCaptureService_Tests/Pods-XDCaptureService_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_XDCaptureService_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -478,10 +412,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -489,6 +425,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -497,6 +434,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -517,21 +455,88 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		3A38EFB83E8CA0B1819EA933ED8F82C3 /* Debug */ = {
+		3A557D979C60B442C9644AACE0DAA579 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFB59AC2398235E28C8506227564BAF8 /* Pods-XDCaptureService_Example.debug.xcconfig */;
+			baseConfigurationReference = F9032F9EC64A65F4A1F601C592C5B6E5 /* Pods-XDCaptureService_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XDCaptureService_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XDCaptureService_Tests/Pods-XDCaptureService_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C08FA2F88E21BA6F062C246087DC72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4336E0B82A8F2286A2E9EA6E44DC38C5 /* Pods-XDCaptureService_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XDCaptureService_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XDCaptureService_Tests/Pods-XDCaptureService_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		53EFDA64A16657CC8B7EBBBADD44F1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EF8094B961CDAD6B0225C4210D42E1 /* Pods-XDCaptureService_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -543,7 +548,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-XDCaptureService_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-XDCaptureService_Example/Pods-XDCaptureService_Example.modulemap";
@@ -551,7 +556,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_XDCaptureService_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,9 +565,9 @@
 			};
 			name = Debug;
 		};
-		5DCC5EDDEE7D839F12678B55AFF06556 /* Release */ = {
+		A0A652D2D8282099DD11CAEFA4821E01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BFB8A6A455A6AA59C162F74280073FD /* XDCaptureService.xcconfig */;
+			baseConfigurationReference = F4F7433183BA9077C5CD38C83A64D34D /* XDCaptureService.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -579,6 +584,37 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/XDCaptureService/XDCaptureService.modulemap";
+				PRODUCT_MODULE_NAME = XDCaptureService;
+				PRODUCT_NAME = XDCaptureService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACF4EAF9B3A528DADDEA06F4DDB54F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F7433183BA9077C5CD38C83A64D34D /* XDCaptureService.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XDCaptureService/XDCaptureService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XDCaptureService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XDCaptureService/XDCaptureService.modulemap";
+				PRODUCT_MODULE_NAME = XDCaptureService;
 				PRODUCT_NAME = XDCaptureService;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -590,7 +626,7 @@
 			};
 			name = Release;
 		};
-		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -600,10 +636,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -611,6 +649,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -619,6 +658,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -636,19 +676,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		B1FD6C38D668657C321B5B7117811AD3 /* Release */ = {
+		FD272FF8CE2BCB0E93557CD570D6FEC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71BFC1820D902E0EF359B8AED5C8500B /* Pods-XDCaptureService_Tests.release.xcconfig */;
+			baseConfigurationReference = 893844150C2D1D243700F333F37501B9 /* Pods-XDCaptureService_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -658,17 +698,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-XDCaptureService_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-XDCaptureService_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-XDCaptureService_Tests/Pods-XDCaptureService_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-XDCaptureService_Example/Pods-XDCaptureService_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_XDCaptureService_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -684,8 +724,17 @@
 		1ECC837F07209EBB3EC18012E63E3F6B /* Build configuration list for PBXNativeTarget "Pods-XDCaptureService_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A38EFB83E8CA0B1819EA933ED8F82C3 /* Debug */,
-				22CBBBA62367CCC6A9A1BB35BCBF23B8 /* Release */,
+				53EFDA64A16657CC8B7EBBBADD44F1FC /* Debug */,
+				FD272FF8CE2BCB0E93557CD570D6FEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EFF55E326468E35BE5D115F1F9F8239 /* Build configuration list for PBXNativeTarget "Pods-XDCaptureService_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A557D979C60B442C9644AACE0DAA579 /* Debug */,
+				3C08FA2F88E21BA6F062C246087DC72E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -693,8 +742,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
-				731DC216E1A58545B559F6E0A2418060 /* Release */,
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -702,17 +751,8 @@
 		3C091AF431F19CDE24D54D65E820402E /* Build configuration list for PBXNativeTarget "XDCaptureService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				097C7F4C4C4760AA8680E2B633AAD25C /* Debug */,
-				5DCC5EDDEE7D839F12678B55AFF06556 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0A7F372E3D26576EBF62B2F27C8D3BF /* Build configuration list for PBXNativeTarget "Pods-XDCaptureService_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				27882A455FEF8FE6433146AF12A70422 /* Debug */,
-				B1FD6C38D668657C321B5B7117811AD3 /* Release */,
+				A0A652D2D8282099DD11CAEFA4821E01 /* Debug */,
+				ACF4EAF9B3A528DADDEA06F4DDB54F4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

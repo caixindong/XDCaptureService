@@ -27,8 +27,7 @@
 
 - (instancetype)initWithURL:(NSURL*)URL
               VideoSettings:(NSDictionary *)videoSetting
-               audioSetting:(NSDictionary *)audioSetting
-              dispatchQueue:(dispatch_queue_t)dispatchQueue;
+               audioSetting:(NSDictionary *)audioSetting;
 
 - (void)startWriting;
 

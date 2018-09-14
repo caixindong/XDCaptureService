@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'XDCaptureService/Classes/**/*'
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'XDCaptureService/Classes/*.h'
+  
   s.frameworks = 'AVFoundation', 'CoreImage'
 end

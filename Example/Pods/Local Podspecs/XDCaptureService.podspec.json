@@ -18,7 +18,7 @@
     "ios": "8.0"
   },
   "source_files": "XDCaptureService/Classes/**/*",
-  "public_header_files": "Pod/Classes/**/*.h",
+  "public_header_files": "XDCaptureService/Classes/*.h",
   "frameworks": [
     "AVFoundation",
     "CoreImage"
