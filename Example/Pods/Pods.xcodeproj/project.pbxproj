@@ -43,9 +43,9 @@
 
 /* Begin PBXFileReference section */
 		15EF8094B961CDAD6B0225C4210D42E1 /* Pods-XDCaptureService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		20BAD66A593F9EFAE1F811BF55CF33A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		20BAD66A593F9EFAE1F811BF55CF33A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		26288494BEC009F527A7C3AEABAF0461 /* Pods-XDCaptureService_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDCaptureService_Example-umbrella.h"; sourceTree = "<group>"; };
-		28061AB8D7DF3F7ECC0CD9B1990C9680 /* XDCaptureService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XDCaptureService.framework; path = XDCaptureService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28061AB8D7DF3F7ECC0CD9B1990C9680 /* XDCaptureService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XDCaptureService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E14BC0991DE5F3CFA92B9E103654D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F7CCCC47E73076741D2562DD10C9DBA /* XDCaptureService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XDCaptureService.modulemap; sourceTree = "<group>"; };
 		3DD075B84FF2DD325C98D83A0AC2195F /* Pods-XDCaptureService_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XDCaptureService_Example.modulemap"; sourceTree = "<group>"; };
@@ -55,13 +55,13 @@
 		57DA4869BF74911290BCB7969B337188 /* Pods-XDCaptureService_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XDCaptureService_Tests-umbrella.h"; sourceTree = "<group>"; };
 		762B0ACD585FBB7FB8A3EF333FF768D6 /* Pods-XDCaptureService_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XDCaptureService_Example-dummy.m"; sourceTree = "<group>"; };
 		77405D42BC32FB46E44E65BEAF1B1AD2 /* Pods-XDCaptureService_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		7A58D87AF9CE5FD72F3B17B5CF4B91A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7A58D87AF9CE5FD72F3B17B5CF4B91A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7B01C7265456DE2A3A614BCAD9D13780 /* XDCaptureService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-umbrella.h"; sourceTree = "<group>"; };
-		82FD3C3F7E9759E27867DF9FE1F8931B /* XDCaptureService.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XDCaptureService.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		86643EAA7BB089A2E0623AD2BEA7A311 /* Pods_XDCaptureService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XDCaptureService_Tests.framework; path = "Pods-XDCaptureService_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82FD3C3F7E9759E27867DF9FE1F8931B /* XDCaptureService.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = XDCaptureService.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		86643EAA7BB089A2E0623AD2BEA7A311 /* Pods_XDCaptureService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDCaptureService_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88071730E480C1BD5B5A0D5754B2FF40 /* XDVideoWritter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDVideoWritter.m; path = XDCaptureService/Classes/XDVideoWritter.m; sourceTree = "<group>"; };
 		893844150C2D1D243700F333F37501B9 /* Pods-XDCaptureService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDCaptureService_Example.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9749DE6B50AA26CF6CBED7961B70C072 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA9141AEB4AF0C7309B8B1071E1BDFF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACDF1D3205DC830E70937DBEA5E111E3 /* Pods-XDCaptureService_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XDCaptureService_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		D3CDC0665237A719A0AE92ACDAD20AAE /* XDCaptureService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDCaptureService-prefix.pch"; sourceTree = "<group>"; };
 		DE8EA415985E7889FBFD1EDAAF0AC5F0 /* Pods-XDCaptureService_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XDCaptureService_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DFE55FEF405FC4CB8E458854256D7699 /* Pods-XDCaptureService_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XDCaptureService_Tests.modulemap"; sourceTree = "<group>"; };
-		E6ABCA688E71134B8FD481722946C6DD /* Pods_XDCaptureService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XDCaptureService_Example.framework; path = "Pods-XDCaptureService_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6ABCA688E71134B8FD481722946C6DD /* Pods_XDCaptureService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDCaptureService_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83278C45624815110110D78EFFEEE97 /* Pods-XDCaptureService_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Example-resources.sh"; sourceTree = "<group>"; };
 		F24122FF7E583E9DCB9CF2655FED014D /* Pods-XDCaptureService_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDCaptureService_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F4F7433183BA9077C5CD38C83A64D34D /* XDCaptureService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDCaptureService.xcconfig; sourceTree = "<group>"; };
@@ -470,6 +470,7 @@
 			baseConfigurationReference = F9032F9EC64A65F4A1F601C592C5B6E5 /* Pods-XDCaptureService_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -503,6 +504,7 @@
 			baseConfigurationReference = 4336E0B82A8F2286A2E9EA6E44DC38C5 /* Pods-XDCaptureService_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -537,6 +539,7 @@
 			baseConfigurationReference = 15EF8094B961CDAD6B0225C4210D42E1 /* Pods-XDCaptureService_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -569,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4F7433183BA9077C5CD38C83A64D34D /* XDCaptureService.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -599,6 +603,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4F7433183BA9077C5CD38C83A64D34D /* XDCaptureService.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -689,6 +694,7 @@
 			baseConfigurationReference = 893844150C2D1D243700F333F37501B9 /* Pods-XDCaptureService_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

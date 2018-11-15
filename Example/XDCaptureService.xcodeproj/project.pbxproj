@@ -497,7 +497,7 @@
 				INFOPLIST_FILE = "XDCaptureService/XDCaptureService-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.caixindong.XDCapture-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xindong.XDCapture-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
@@ -517,7 +517,7 @@
 				INFOPLIST_FILE = "XDCaptureService/XDCaptureService-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.caixindong.XDCapture-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xindong.XDCapture-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
