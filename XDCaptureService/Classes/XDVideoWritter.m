@@ -120,13 +120,13 @@
         [_assetWriter cancelWriting];
         self.isWriting = NO;
     } else {
-        NSLog(@"warning : cancle writing with unsuitable state : %ld",_assetWriter.status);
+        NSLog(@"warning : cancle writing with unsuitable state : %d",_assetWriter.status);
     }
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AVCaptureSessionWasInterruptedNotification object:nil];
 }
 
 - (void)stopWriting {
-    if (_assetWriter.status == AVAssetWriterStatusWriting) {
+    if (_assetWriter.status == AVAssetWriterStatusWriting && _isWriting == YES) {
         self.isWriting = NO;
         [_assetWriter finishWritingWithCompletionHandler:^{
             if (_assetWriter.status == AVAssetWriterStatusCompleted) {
@@ -140,12 +140,17 @@
             }
         }];
     } else {
-        NSLog(@"warning : stop writing with unsuitable state : %ld",_assetWriter.status);
+        NSLog(@"warning : stop writing with unsuitable state : %d",_assetWriter.status);
     }
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AVCaptureSessionWasInterruptedNotification object:nil];
 }
 
 - (void)appendSampleBuffer:(CMSampleBufferRef)sampleBuffer {
+    if (!_isWriting) {
+        return;
+        NSLog(@"VideoWritter has been finish");
+    }
+    
     CMFormatDescriptionRef formatDesc = CMSampleBufferGetFormatDescription(sampleBuffer);
     
     CMMediaType mediaType = CMFormatDescriptionGetMediaType(formatDesc);
