@@ -33,7 +33,7 @@
 
 - (void)cancleWriting;
 
-- (void)stopWriting;
+- (void)stopWritingAsyn;
 
 - (void)appendSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 

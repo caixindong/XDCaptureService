@@ -14,7 +14,7 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
 
 #define XDCAPTURE_ISIHPNEX [UIScreen mainScreen].bounds.size.height == 812? YES:NO
 
-@interface XDCaptureService()<AVCaptureVideoDataOutputSampleBufferDelegate,AVCaptureAudioDataOutputSampleBufferDelegate,XDVideoWritterDelegate,AVCaptureMetadataOutputObjectsDelegate,AVCaptureDepthDataOutputDelegate,AVCaptureDataOutputSynchronizerDelegate, AVCapturePhotoCaptureDelegate>{
+@interface XDCaptureService()<AVCaptureVideoDataOutputSampleBufferDelegate,AVCaptureAudioDataOutputSampleBufferDelegate,XDVideoWritterDelegate,AVCaptureMetadataOutputObjectsDelegate>{
     BOOL _firstStartRunning;
     BOOL _startSessionOnEnteringForeground;
     NSString *_videoDir;
@@ -48,15 +48,7 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
 
 @property (nonatomic, strong) AVCaptureMetadataOutput *metadataOutput;
 
-@property (nonatomic, strong) AVCaptureDepthDataOutput *depthDataOutput;
-
-@property (nonatomic, strong) AVCaptureConnection *depthDataConnection;
-
-@property (nonatomic, strong) AVCaptureDataOutputSynchronizer *outputSynchronizer;
-
 @property (nonatomic, strong) AVCaptureStillImageOutput *imageOutput;
-
-@property (nonatomic, strong) AVCapturePhotoOutput *depthPhotoOutput;
 
 @property (nonatomic, strong) XDVideoWritter *videoWriter;
 
@@ -213,41 +205,35 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
 
 - (void)startRecording {
     dispatch_async(_writtingQueue, ^{
-        @synchronized(self) {
-            NSString *videoFilePath = [_videoDir stringByAppendingPathComponent:[NSString stringWithFormat:@"Record-%llu.mp4",mach_absolute_time()]];
+        NSString *videoFilePath = [_videoDir stringByAppendingPathComponent:[NSString stringWithFormat:@"Record-%llu.mp4",mach_absolute_time()]];
             
-            _recordURL = [[NSURL alloc] initFileURLWithPath:videoFilePath];
+        _recordURL = [[NSURL alloc] initFileURLWithPath:videoFilePath];
             
-            if (_recordURL) {
-                _videoWriter = [[XDVideoWritter alloc] initWithURL:_recordURL VideoSettings:_videoSetting audioSetting:_audioSetting];
-                _videoWriter.delegate = self;
-                [_videoWriter startWriting];
-                if (self.delegate && [self.delegate respondsToSelector:@selector(captureServiceRecorderDidStart:)]) {
-                    [self.delegate captureServiceRecorderDidStart:self];
-                }
-            } else {
-                NSLog(@"No record URL");
+        if (_recordURL) {
+            _videoWriter = [[XDVideoWritter alloc] initWithURL:_recordURL VideoSettings:_videoSetting audioSetting:_audioSetting];
+            _videoWriter.delegate = self;
+            [_videoWriter startWriting];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(captureServiceRecorderDidStart:)]) {
+                [self.delegate captureServiceRecorderDidStart:self];
             }
+        } else {
+            NSLog(@"No record URL");
         }
     });
 }
 
 - (void)cancleRecording {
     dispatch_async(_writtingQueue, ^{
-        @synchronized(self) {
-            if (_videoWriter) {
-                [_videoWriter cancleWriting];
-            }
+        if (_videoWriter) {
+            [_videoWriter cancleWriting];
         }
     });
 }
 
 - (void)stopRecording {
     dispatch_async(_writtingQueue, ^{
-        @synchronized(self) {
-            if (_videoWriter) {
-                [_videoWriter stopWriting];
-            }
+        if (_videoWriter) {
+            [_videoWriter stopWritingAsyn];
         }
     });
 }
@@ -309,12 +295,6 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
         }
     }
     
-    if (_openDepth) {
-        if (![self _setupDepthDataOutput:error]) {
-            return NO;
-        }
-    }
-    
     if (self.preViewSource && [self.preViewSource respondsToSelector:@selector(preViewLayerSource)]) {
         self.previewLayer = [self.preViewSource preViewLayerSource];
         [_previewLayer setSession:_captureSession];
@@ -369,7 +349,7 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
     self.videoOutput = [[AVCaptureVideoDataOutput alloc] init];
     _videoOutput.videoSettings = @{(id)kCVPixelBufferPixelFormatTypeKey: @(kCVPixelFormatType_32BGRA)};
     //对迟到的帧做丢帧处理
-    _videoOutput.alwaysDiscardsLateVideoFrames = YES;
+    _videoOutput.alwaysDiscardsLateVideoFrames = NO;
     
     dispatch_queue_t videoQueue = dispatch_queue_create("com.caixindong.captureservice.video", DISPATCH_QUEUE_SERIAL);
     [_videoOutput setSampleBufferDelegate:self queue:videoQueue];
@@ -477,42 +457,6 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
     }
 }
 
-- (BOOL)_setupDepthDataOutput:(NSError **)error {
-    if (@available(iOS 11.0, *)) {
-        self.depthDataOutput = [[AVCaptureDepthDataOutput alloc] init];
-        if ([_captureSession canAddOutput:_depthDataOutput]) {
-            [_captureSession addOutput:_depthDataOutput];
-            //不进行平滑处理
-            _depthDataOutput.filteringEnabled = NO;
-            [_depthDataOutput setDelegate:self callbackQueue:_sessionQueue];
-            
-            self.depthDataConnection = [_depthDataOutput connectionWithMediaType:AVMediaTypeDepthData];
-            _depthDataConnection.enabled = YES;
-            
-            //跟video output同理
-            if (_depthDataConnection.isVideoOrientationSupported) {
-                _depthDataConnection.videoOrientation = AVCaptureVideoOrientationPortrait;
-            }
-            
-            NSArray *outputs = nil;
-            if (_shouldRecordAudio) {
-                outputs = @[_videoOutput,_audioOutput,_depthDataOutput];
-            } else {
-                outputs = @[_videoOutput,_depthDataOutput];
-            }
-            self.outputSynchronizer = [[AVCaptureDataOutputSynchronizer alloc] initWithDataOutputs:outputs];
-            dispatch_queue_t outputSyncQueue = dispatch_queue_create("com.caixindong.captureservice.outputSync", DISPATCH_QUEUE_SERIAL);
-            [_outputSynchronizer setDelegate:self queue:outputSyncQueue];
-            
-            return YES;
-        } else {
-            return NO;
-        }
-    } else {
-        return NO;
-    }
-}
-
 - (BOOL)_clearVideoFile:(NSError **)error {
     NSString *tmpDirPath = NSTemporaryDirectory();
     NSString *videoDirPath = [tmpDirPath stringByAppendingPathComponent:XDCVIDEODIR];
@@ -580,13 +524,9 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
 - (void)captureOutput:(AVCaptureOutput *)output didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     //可以捕获到不同的线程
     if (connection == _videoConnection) {
-        @synchronized(self) {
-            [self _processVideoData:sampleBuffer];
-        };
+        [self _processVideoData:sampleBuffer];
     } else if (connection == _audioConnection) {
-        @synchronized(self) {
-            [self _processAudioData:sampleBuffer];
-        };
+        [self _processAudioData:sampleBuffer];
     }
 }
 
@@ -627,29 +567,6 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
     };
 }
 
-#pragma mark - AVCaptureDepthDataOutputDelegate
-- (void)depthDataOutput:(AVCaptureDepthDataOutput *)output didOutputDepthData:(AVDepthData *)depthData timestamp:(CMTime)timestamp connection:(AVCaptureConnection *)connection  API_AVAILABLE(ios(11.0)){
-    [self _processDepthData:depthData time:timestamp];
-}
-
-#pragma mark - AVCaptureDataOutputSynchronizerDelegate
-- (void)dataOutputSynchronizer:(AVCaptureDataOutputSynchronizer *)synchronizer didOutputSynchronizedDataCollection:(AVCaptureSynchronizedDataCollection *)synchronizedDataCollection  API_AVAILABLE(ios(11.0)){
-    
-    AVCaptureSynchronizedDepthData *syncedDepthData = (AVCaptureSynchronizedDepthData*)[synchronizedDataCollection synchronizedDataForCaptureOutput:_depthDataOutput];
-    if (syncedDepthData && !syncedDepthData.depthDataWasDropped) {
-        [self _processDepthData:syncedDepthData.depthData time:syncedDepthData.timestamp];
-    }
-    
-    AVCaptureSynchronizedSampleBufferData *syncedVideoData = (AVCaptureSynchronizedSampleBufferData *)[synchronizedDataCollection synchronizedDataForCaptureOutput:_videoOutput];
-    if (syncedVideoData && !syncedVideoData.sampleBufferWasDropped) {
-        [self _processVideoData:syncedVideoData.sampleBuffer];
-    }
-    
-    AVCaptureSynchronizedSampleBufferData *syncedAudioData = (AVCaptureSynchronizedSampleBufferData *)[synchronizedDataCollection synchronizedDataForCaptureOutput:_audioOutput];
-    if (syncedAudioData && !syncedAudioData.sampleBufferWasDropped) {
-        [self _processAudioData:syncedAudioData.sampleBuffer];
-    }
-}
 
 #pragma mark - process Data
 - (void)_processVideoData:(CMSampleBufferRef)sampleBuffer {
