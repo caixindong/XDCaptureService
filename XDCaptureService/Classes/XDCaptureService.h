@@ -30,6 +30,8 @@
 
 - (void)captureService:(XDCaptureService *)service recorderDidFailWithError:(NSError *)error;
 
+- (void)captureServiceRecorderDidCancel:(XDCaptureService *)service;
+
 - (void)captureServiceRecorderDidStop:(XDCaptureService *)service;
 
 //照片捕获
@@ -81,6 +83,8 @@
 @property (nonatomic, assign) id<XDCaptureServiceDelegate> delegate;
 
 @property (nonatomic, assign, readonly) BOOL isRunning;
+
+@property (nonatomic, assign, readonly) BOOL isRecording;
 
 
 /**
