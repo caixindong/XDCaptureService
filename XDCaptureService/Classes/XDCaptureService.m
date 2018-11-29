@@ -226,6 +226,9 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
     dispatch_async(_writtingQueue, ^{
         if (_videoWriter) {
             [_videoWriter cancleWriting];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(captureServiceRecorderDidCancel:)]) {
+                [self.delegate captureServiceRecorderDidCancel:self];
+            }
         }
     });
 }
@@ -787,6 +790,14 @@ static NSString *const XDCVIDEODIR = @"tmpVideo";
         }
     } else {
         NSLog(@"Device no support flash");
+    }
+}
+
+- (BOOL)isRecording {
+    if (_videoWriter) {
+        return _videoWriter.isWriting;
+    } else {
+        return NO;
     }
 }
 
